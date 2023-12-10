@@ -1,0 +1,24 @@
+.user {
+  margin-bottom: 1rem;
+}
+
+.user label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #f3f3f3;
+  padding: 1rem;
+}
+
+.user-title {
+  width: 17em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user p {
+  color: black;
+}

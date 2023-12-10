@@ -1,0 +1,27 @@
+<form action="/" method="DELETE"></form>
+<h2>Users</h2>
+
+{{#if users.length}}
+<ul>
+  {{#each users}}
+  <li class="user">
+    <form action="/delete" method="POST">
+      <label>
+        <div class="user-title">
+          <p>Name:</p>
+          <span>{{name}}</span>
+        </div>
+        <div class="user-title">
+          <p>eMail:</p>
+          <span>{{email}}</span>
+        </div>
+        <input type="hidden" value="{{_id}}" name="id">
+        <button class="btn" type="submit">Delete</button>
+      </label>
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No users!</p>
+{{/if}}
